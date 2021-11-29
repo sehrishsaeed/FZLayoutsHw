@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Style the body */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        /* Header/logo Title */
+        .header {
+            padding: 30px;
+            text-align: center;
+            background: white;
+            color: rebeccapurple;
+            font-size: 35px;
+        }
+
+        /* Style the top navigation bar */
+        .navbar {
+            display: flex;
+            background-color: white;
+            float: right;
+            padding: 14px 20px;
+        }
+
+        /* Style the navigation bar links */
+        .navbar a {
+            color: rebeccapurple;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        /* Change color on hover */
+        .navbar a:hover {
+            background-color: rebeccapurple;
+            color: white;
+        }
+
+        .logo {
+            color: rebeccapurple;
+            float: left;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        /* Column container */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        /* Create two unequal columns that sits next to each other */
+        /* Sidebar/left column */
+        .side {
+            flex: 30%;
+            background-color: mediumpurple;
+            padding: 20px;
+            color: white;
+        }
+
+        /* Main column */
+        .main {
+            flex: 70%;
+            background-color: white;
+            padding: 20px;
+            color: rebeccapurple;
+        }
+
+        /* Fake image, just for this example */
+        .fakeimg {
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: rebeccapurple;
+            color: white;
+        }
+        .responsive {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 700px) {
+            .row, .navbar {
+                flex-direction: column;
+            }
+        }
+        a:link, a:visited {
+            background-color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        a:hover, a:active {
+            background-color: green;
+            color: white;
+        }
+
+        /* Fake image, just for this example */
+        .webimg {
+            background-color: #aaa;
+            padding: 20px;
+            width: 600px;
+        }
+    </style>
+</head>
+<body>
+<!-- Navigation Bar -->
+<div class="logo">The Internet</div>
+<div class="navbar">
+    <a href="http://history18.eastus.azurecontainer.io">Home</a>
+    <a href="#">Then This</a>
+    <a href="http://history18.eastus.azurecontainer.io/f-layout.html">F Layout</a>
+    <a href="http://history18.eastus.azurecontainer.io/z-layout.html">Z Layout</a>
+</div>
+<!-- Header -->
+<div class="header">
+    <h1>F-Layout</h1>
+    <h3>Kind of in the shape of an F.</h3>
+</div>
+<article>
+    <!-- The flexible grid (content) -->
+    <div class="row">
+        <div class="side">
+            <h2>About Me</h2>
+            <h4>What I look like</h4>
+            <div class="fakeimg" style="height:200px;">Image</div>
+            <p>here's something about me</p>
+            <h3>read some more about me</h3>
+            <p>if you'd like to know more...</p>
+            <div class="fakeimg" style="height:60px;">Image</div><br>
+            <div class="fakeimg" style="height:60px;">Image</div><br>
+            <div class="fakeimg" style="height:60px;">Image</div>
+        </div>
+        <div class="main">
+            <h2>THE WEB</h2>
+            <h4>Learning about layouts Nov 29th, 2021</h4>
+            <div class="webimg"><img src="images/web.jpg" alt="web" class="responsive"></div>
+            <p>Some text..</p>
+            <p>some text for you to read up on </p>
+            <br>
+            <h2>TITLE HEADING</h2>
+            <h4>Describe title here, Nov 29th, 2021</h4>
+            <div class="fakeimg" style="height:200px;">Image</div>
+            <p>Some text..</p>
+             <p>some text for you to read up on </p>
+        </div>
+    </div>
+</article>
+<!-- Footer -->
+<div class="footer">
+    <h2>Sehrish Saeed &#169</h2>
+</div>
+</body>
+</html>
